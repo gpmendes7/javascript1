@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <button class="botao">Criar</button>
+
+        <script>
+           var botao = document.querySelector('.botao');
+          
+           botao.onclick = function() {
+               var quadrado = document.createElement("div");
+
+               quadrado.style.width = 100;
+               quadrado.style.height = 100;
+               quadrado.style.backgroundColor = "#f00";
+
+               document.querySelector("body").appendChild(quadrado);
+           }
+        </script>
+    </body>
+</html>

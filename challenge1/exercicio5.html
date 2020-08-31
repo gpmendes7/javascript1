@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <script>
+          function detalha(usuarios){
+            for(let usuario of usuarios){
+              console.log("O " + usuario.nome + " possui as habilidadedes: " + usuario.habilidades.join(", "));
+            }
+          }
+
+          var usuarios = [
+            {
+              nome: "Diego",
+              habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+              nome: "Gabriel",
+              habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+          ]
+
+          detalha(usuarios);
+        </script>
+    </body>
+</html>
